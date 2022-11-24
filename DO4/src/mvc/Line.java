@@ -2,15 +2,15 @@ package mvc;
 
 import java.awt.Graphics;
 
-public class Line extends Shape{
-	private Point startPoint;
-	private Point endPoint;
-	
+public class Line extends Shape {
+	private Point startPoint = new Point();
+	private Point endPoint = new Point();
+
 	public Line(Point startPoint, Point endPoint) {
 		this.startPoint = startPoint;
 		this.endPoint = endPoint;
 	}
-	
+
 	public Line() {
 		// TODO Auto-generated constructor stub
 	}
@@ -31,20 +31,15 @@ public class Line extends Shape{
 		this.endPoint = endPoint;
 	}
 
-
 	@Override
 	public void draw(Graphics g) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public String toString() {
 		return "Line [startPoint=" + startPoint + ", endPoint=" + endPoint + "]";
 	}
-	
-	
-	
-	
 
 }
